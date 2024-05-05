@@ -17,7 +17,7 @@ Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.
 ###### 2022
 
 - `en` [MetalLB perf & scale testing](https://josecastillolema.github.io/perfcon22/) - PerfConf spring '22
-- `pt` [Nuvens híbridas e soluções Red Hat](https://josecastillolema.github.io/cati22/) - Congresso acadêmico de tecnologia da informação II CATI- São Paulo
+- `pt` [Nuvens híbridas e soluções Red Hat](https://josecastillolema.github.io/cati22/) - Congresso acadêmico de tecnologia da informação II CATI - São Paulo
 
 ###### 2021
 
