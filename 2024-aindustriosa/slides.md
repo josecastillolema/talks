@@ -25,7 +25,7 @@ style: |
 <br/>
 <br/>
 José Castillo Lema
-<p class="small-text"><a href="https://github.com/josecastillolema/aindustriosa">https://github.com/josecastillolema/aindustriosa</a></p>
+<p class="small-text"><a href="https://github.com/josecastillolema/talks">https://github.com/josecastillolema/talks</a></p>
 
 ---
 ## whoami
