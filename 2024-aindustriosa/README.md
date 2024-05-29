@@ -359,6 +359,9 @@ Usando *list comprehension*:
 ## Filter
 
 ---
+## Tooling
+
+---
 ## Futuro
 
 - OCaml 5, multicore ...
