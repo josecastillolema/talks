@@ -50,20 +50,7 @@ José Castillo Lema
 - Ejemplos del mundo real (analizadores, intérpretes, etc.)
 
 ---
-## OCaml (Objective Caml)
-<style scoped>section { font-size: 32px; }</style>
-- Creado en el **1996** en **Inria**, proviene de una familia de lenguajes denominados **ML** (Meta Language)
-- Propósito **general** y **compilado**
-- Estáticamente tipado y con **interferencia de tipos** y **evaluación estricta**
-- **Alto** nivel con ***garbage collection*** :arrow_right: ***memory safe***
-- Multi **paradigma**
-  - **Funcional**
-  - Imperativa
-  - Orientada a objetos
-- Multi **plataforma** (incluyendo JavaScript y WebAssemby)
-
----
-### Tipos de lenguajes
+### Historia
 <style>
 img[alt~="center"] {
   display: block;
@@ -72,6 +59,33 @@ img[alt~="center"] {
 </style>
 
 ![w:900 h:500 center](img/history.png)
+
+---
+### Programación funcional
+
+- Características
+  - **Funciones puras**, sin efectos colaterales
+  - **Inmutabilidad**, generamos nuevos valores
+  - **Recursión**, sin bucles
+  - **Funciones de orden superior**
+- Ventajas
+  - Código más claro y más fácil de razonar sobre
+  - Escalabilidad
+  - Más fácil de testar
+
+---
+## OCaml (Objective Caml)
+<style scoped>section { font-size: 30px; }</style>
+- Creado en el **1996** en [**Inria**](https://www.inria.fr/en) proviene de una familia de lenguajes denominados **ML** (Meta Language)
+- Propósito **general** y **compilado**
+- **Estáticamente** y fuertemente **tipado**
+- Implementa **interferencia de tipos** y **evaluación estricta**
+- **Alto** nivel con ***garbage collection*** :arrow_right: ***memory safe***
+- Multi **paradigma**
+  - **Funcional**
+  - Imperativa
+  - Orientada a objetos
+- Multi **plataforma** (incluyendo JavaScript y WebAssemby)
 
 ---
 ## Tipos de lenguajes
@@ -84,7 +98,7 @@ table {
 
 Lenguaje | Imperativo                                                           | Funcional
 ---------|----------------------------------------------------------------------|----------
-Dinámico | <ul><li>Python</li><li>Ruby</li><li>Javascript</li><li>PHP</li></ul> | <ul><li>Lisp</li><li>Scheme</li><li>Clojure</li></ul>
+Dinámico | <ul><li>Python</li><li>Ruby</li><li>Javascript</li><li>PHP</li></ul> | <ul><li>Lisp</li><li>Scheme</li><li>Clojure</li><li>Erlang</li><li>Elixir</li></ul>
 Estático | <ul><li>C</li><li>C#</li><li>Java</li><li>C++</li></ul>              | <ul><li>**OCaml**</li><li>Scala</li><li>Haskell</li><li>**F#**</li></ul>
 
 ---
@@ -93,18 +107,25 @@ Estático | <ul><li>C</li><li>C#</li><li>Java</li><li>C++</li></ul>             
 
 ---
 ## Software escrito en OCaml
- - **Coq**, un asistente de pruebas
+ - [**Coq**](https://coq.inria.fr/): un asistente de pruebas
  - Partes del cliente **Docker** de macOS
- - **Facebook Messenger**, la versión web
- - **MirageOS**, para crear unikernels
- - **MLdonkey**, transferencia de archivos *peer-to-peer*
- - **Tezos**, una plataforma de bitcoin
- - **Xen Cloud Platform** y **XenServer**, plataformas de virtualización
+ - **Facebook Messenger**: la versión web
+ - [**MirageOS**](https://mirage.io/): para crear _unikernels_
+ - **MLdonkey**: transferencia de archivos *peer-to-peer*
+ - [**Tezos**](https://tezos.com/): una plataforma de _bitcoin_
+ - **virt-v2v**: un conversor de servidores a KVM de Red Hat
+ - **Xen Cloud Platform** y **XenServer**: plataformas de virtualización
 
 ---
 ## Frontend
- - ReasonML from Facebook
- - BuckleScript
+ - Nuevos **lenguajes**
+   - [**ReasonML**](https://reasonml.github.io/) por Facebook
+   - [**ReScript**](https://rescript-lang.org/) por Bloomberg
+ - **Compiladores** de OCaml a JavaScript
+   - [**js_of_ocaml**](https://github.com/ocsigen/js_of_ocaml)
+   - [**Melange**](https://melange.re/)
+ - **Influencias**
+   - [**Elm**](https://elm-lang.org/)
 
 ---
 ## Usuarios
@@ -114,6 +135,7 @@ Estático | <ul><li>C</li><li>C#</li><li>Java</li><li>C++</li></ul>             
  - Docker
  - Facebook
  - Jane Street
+ - Red Hat
 
 ---
 ## OCaml *vs* Python
@@ -130,9 +152,6 @@ let rec suma = function
 
 assert (suma [1;2;3;4] = 10)
 print_endline "Éxito!"
-
-(* suma' : int list -> int *)
-let suma' list = List.fold_left (+) 0 list
 ```
 </div>
 <div class="col">
@@ -147,17 +166,12 @@ def suma (list):
 
 assert (suma([1,2,3,4]) == 10)
 print("Éxito!")
-
-# Usando list comprehension
-def suma2 (list):
-  acc = 0
-  return [acc := acc + x for x in list][-1]
 ```
 </div>
 </div>
 
 ---
-## OCaml *vs* Python (tipos)
+## OCaml *vs* Python
 
 <div class="container">
 <div class="col">
@@ -227,7 +241,7 @@ En **OCaml**:
 ```ocaml
 [1; 'a']
 (* Error: This expression has type char
-  but an expression was expected of type int *)
+   but an expression was expected of type int *)
 
 1 + 2
 (* -: int = 3 *)
@@ -268,7 +282,35 @@ En **Python**:
 </div>
 
 ---
-## Funciones y *pattern matching*
+## _Product types_ (registros) y _union types_ (variantes)
+
+<style scoped>section { font-size: 28px; }</style>
+<div class="container">
+<div class="col">
+
+Tenemos que representar la siguiente regla de negocio:
+> **Los clientes deben tener email o direccion**
+
+En **OCaml**:
+```ocaml
+type contacto =
+  | Email of string
+  | Direccion of string
+  | EmailyDireccion of string * string
+
+type persona = {
+  nombre: string;
+  contacto: contacto;
+}
+```
+</div>
+
+<div class="col">
+
+En **Python**:
+ - Usando clases y herencia?
+</div>
+</div>
 
 ---
 ## Aplicación parcial
@@ -292,7 +334,6 @@ suma1 1
 
 <div class="col">
 
-
 En **Python**, por defecto:
 ```python
 def suma (x, y):
@@ -314,10 +355,162 @@ suma1 (1)
 </div>
 
 ---
+## _Pipes_
+
+<div class="container">
+<div class="col">
+
+En **OCaml**:
+```ocaml
+suma1 (suma1 4)
+(* - : int = 6 *)
+
+suma1 @@ suma1 4
+(* - : int = 6 *)
+
+4 |> suma1 |> suma1
+(* - : int = 6 *)
+```
+</div>
+
+<div class="col">
+
+En **Python**:
+```python
+suma1 (suma1 (4))
+```
+
+Usando la biblioteca *pipe*?
+</div>
+</div>
+
+---
 ## Polimorfismo
+
+<style scoped>section { font-size: 28px; }</style>
+<div class="container">
+<div class="col">
+
+**OCaml** implementa **polimorfismo paramétrico**:
+```ocaml
+(* 'a -> 'a -> bool *)
+let compara input1 input2 =
+  input1 = input2
+```
+
+**OCaml** no implementa **polimorfismo _ad-hoc_**:
+```ocaml
+1 + 1
+(* - : int = 2 *)
+
+1. + 1.
+(* Error: This expression has type float
+   but an expression was expected of type int *)
+```
+
+</div>
+
+<div class="col">
+
+**Python** también implementa **polimorfismo paramétrico**:
+```python
+def igual (a, b):
+  return (a==b)
+```
+
+**Python** sí implementa **polimorfismo _ad-hoc_**:
+```python
+1 + 1
+# 2
+
+1. + 1.
+# 2.
+
+"a" + "b"
+# 'ab'
+```
+
+</div>
+</div>
 
 ---
 ## Option
+
+<style scoped>section { font-size: 28px; }</style>
+<div class="container">
+<div class="col">
+
+En **OCaml**:
+```ocaml
+type 'a option =
+  | None
+  | Some of 'a
+
+(* 'a list -> 'a *)
+List.hd []
+(* Exception: Failure "hd". *)
+
+(* 'a option list -> 'a option *)
+let hd = function
+  | h::t -> Some h
+  | [] -> None
+
+hd [];;
+(* - : 'a option = None *)
+
+hd [1; 2; 3]
+(* - : int option = Some 1 *)
+```
+</div>
+
+<div class="col">
+
+En **Python**:
+```python
+[][0]
+# IndexError: list index out of range
+
+def hd (list):
+  try:
+    return list[0]
+  except:
+    return None
+
+hd ([])
+#
+
+hd ([1,2,3])
+# 1
+```
+</div>
+</div>
+
+---
+## *Pattern matching*
+
+<div class="container">
+<div class="col">
+
+En **OCaml**:
+```ocaml
+match (hd [2]) with
+  | None -> 0
+  | Some x -> x
+(* - : int = 2 *)
+```
+</div>
+
+<div class="col">
+
+En **Python**, desde la versión **3.10**:
+```python
+match hd ([2]):
+  case None: print (0)
+  case int(n): print(n)
+# 2
+```
+</div>
+</div>
 
 ---
 ## Map
@@ -335,7 +528,7 @@ List.map ((+) 1) [1; 2; 3]
 
 <div class="col">
 
-En **Python**, usando un bucle `for`: 
+En **Python**, usando un bucle `for`:
 ```python
 lista_nueva = []
 for elemento in [1, 2, 3]:
@@ -354,17 +547,81 @@ Usando *list comprehension*:
 
 ---
 ## Fold (reduce)
+<div class="container">
+<div class="col">
+
+En **OCaml**:
+```ocaml
+(* int list -> int *)
+let rec sum = function
+  | [] -> 0
+  | h :: t -> h + sum t
+
+(* int list -> int *)
+let sum' l = List.fold_left ( + ) 0 l
+```
+</div>
+
+<div class="col">
+
+En **Python**:
+```python
+# Usando la función incorporada
+sum ([1, 2])
+# 3
+
+# Usando for
+total_sum = 0
+for item in mylist:
+    total_sum += item
+
+# Usando list comprehension
+def sum2 (list):
+  acc = 0
+  return [acc := acc + x for x in list][-1]
+```
+</div>
+</div>
 
 ---
 ## Filter
 
+<div class="container">
+<div class="col">
+
+En **OCaml**:
+```ocaml
+List.filter (fun x -> x>2) [1; 2; 3]
+(* - : int list = [3] *)
+```
+</div>
+
+<div class="col">
+
+En **Python**:
+```python
+l = filter(lambda x: x > 2, [1, 2 ,3])
+print(list(l))
+# [3]
+```
+</div>
+</div>
+
 ---
 ## Tooling
+- [utop](https://github.com/ocaml-community/utop): entorno interactivo (REPL)
+- [dune](https://dune.build/): sistema de compilación
+- [opam](https://opam.ocaml.org/): gestor de paquetes
+- [ocaml-lsp](https://github.com/ocaml/ocaml-lsp): el protocolo de servidor de lenguaje de OCaml
+- [OCaml platform](https://marketplace.visualstudio.com/items?itemName=ocamllabs.ocaml-platform): extensión para VSCode
 
 ---
 ## Futuro
 
-- OCaml 5, multicore ...
+- OCaml 5
+  - Soporte a _multicore_
+    - Concurrencia :arrow_right: _effect handlers_
+    - Paralelismo :arrow_right: _domains_
 
 ---
 ## Referencias
@@ -374,10 +631,13 @@ Usando *list comprehension*:
 
 ---
 ## Recursos
+<style scoped>section { font-size: 30px; }</style>
 - [OCaml website](https://ocaml.org/)
 - Curso de la Universidad de Cornell: [OCaml Programming: Correct + Efficient + Beautiful](https://cs3110.github.io/textbook/cover.html)
 - Libro: [Real World OCaml - Functional programming for the masses](https://dev.realworldocaml.org/)
-- Blog: [F# for Fun and Profit](https://fsharpforfunandprofit.com/)
+- Blogs
+  - [F# for Fun and Profit](https://fsharpforfunandprofit.com/)
+  - [Thomas Leonard's blog](https://roscidus.com/blog/)
 - Desafíos
   - [99 problemas](https://ocaml.org/exercises) inspirados en Ninety-Nine Lisp Problems
   - [Learn OCaml](https://ocaml-sf.org/learn-ocaml-public/)
