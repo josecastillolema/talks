@@ -2,6 +2,16 @@
 
 Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.app/).
 
+###### 2025
+
+- `es` [OCaml (vs Python) y Unikernels con MirageOS ](https://josecastillolema.github.io/fp-madrid-ocaml/) - Functional Programming Madrid - Madrid
+- `en` [Docker hands-on](https://josecastillolema.github.io/codethedream25/) - Code the Dream Skill-IT workshops
+- `en` [Panel: Performance modeling for the computing continuum](https://josecastillolema.github.io/hotcloudperf25/) - 8th Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf'25) - Toronto
+- `en` [Bridging Clusters: A comparative Look at Multicluster Networking Performance in Kubernetes](https://josecastillolema.github.io/icpe25/) - 16th ACM/SPEC International Conference on Performance Engineering (ICPE'25) - Toronto
+- `en` [Horizon Europe projects working on the cloud edge continuum](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
+- `en` [Shifting performance engineering left](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
+
+
 ###### 2024
 
 - `es` [Descubre el poder de la programación funcional a través de OCaml](https://josecastillolema.github.io/industriosa-ocaml/) - A Industriosa - Vigo
