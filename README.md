@@ -10,7 +10,7 @@ Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.
 - `en` [Bridging Clusters: A comparative Look at Multicluster Networking Performance in Kubernetes](https://josecastillolema.github.io/icpe25/) - 16th ACM/SPEC International Conference on Performance Engineering (ICPE'25) - Toronto
 - `en` [Horizon Europe projects working on the cloud edge continuum](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
 - `en` [Shifting performance engineering left](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
-- `en` [Shifting performance engineering left](https://josecastillolema.github.io/devconf25/) - DevConf.cz - Brno
+- `en` [Shifting performance engineering left with kube-burner](https://josecastillolema.github.io/devconf25/) - DevConf.cz - Brno
 - `en` [CODECO: AI-Driven Orchestration for Multi-Cluster Edge Deployment](https://josecastillolema.github.io/devconf25/) - DevConf.cz - Brno
 
 ###### 2024
