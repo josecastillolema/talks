@@ -2,6 +2,11 @@
 
 Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.app/).
 
+###### 2026
+
+- `en` [API Remoting for llama.cpp: Near-Native GPU Speed in macOS Containers](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
+- `en` [A Performance Comparison of Kubernetes Multi-Cluster Networking](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
+
 ###### 2025
 
 - `es` [OCaml (vs Python) y Unikernels con MirageOS ](https://josecastillolema.github.io/fp-madrid-ocaml/) - Functional Programming Madrid - Madrid
