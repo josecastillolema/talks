@@ -4,25 +4,25 @@ Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.
 
 ###### 2026
 
-- `en` [API Remoting for llama.cpp: Near-Native GPU Speed in macOS Containers](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
 - `en` [A Performance Comparison of Kubernetes Multi-Cluster Networking](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
+- `en` [API Remoting for llama.cpp: Near-Native GPU Speed in macOS Containers](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
 
 ###### 2025
 
-- `es` [OCaml (vs Python) y Unikernels con MirageOS ](https://josecastillolema.github.io/fp-madrid-ocaml/) - Functional Programming Madrid - Madrid
-- `en` [Docker hands-on](https://josecastillolema.github.io/codethedream25/) - Code the Dream Skill-IT workshops
-- `en` [Panel: Performance modeling for the computing continuum](https://josecastillolema.github.io/hotcloudperf25/) - 8th Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf'25) - Toronto
-- `en` [Bridging Clusters: A comparative Look at Multicluster Networking Performance in Kubernetes](https://josecastillolema.github.io/icpe25/) - 16th ACM/SPEC International Conference on Performance Engineering (ICPE'25) - Toronto
-- `en` [Horizon Europe projects working on the cloud edge continuum](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
-- `en` [Shifting performance engineering left](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
-- `en` [Shifting performance engineering left with kube-burner](https://josecastillolema.github.io/devconf25/) - DevConf.cz - Brno
-- `en` [CODECO: AI-Driven Orchestration for Multi-Cluster Edge Deployment](https://josecastillolema.github.io/devconf25/) - DevConf.cz - Brno
 - `en` [AI-Powered Performance Insights](https://josecastillolema.github.io/ovscon25/) - Open vSwitch and OVN 2025 Fall Conference - Prague
+- `en` [CODECO: AI-Driven Orchestration for Multi-Cluster Edge Deployment](https://josecastillolema.github.io/devconf25/) - DevConf.cz - Brno
+- `en` [Shifting performance engineering left with kube-burner](https://josecastillolema.github.io/devconf25/) - DevConf.cz - Brno
+- `en` [Shifting performance engineering left](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
+- `en` [Horizon Europe projects working on the cloud edge continuum](https://josecastillolema.github.io/rh-summit25/) - Red Hat Summit - Boston
+- `en` [Bridging Clusters: A comparative Look at Multicluster Networking Performance in Kubernetes](https://josecastillolema.github.io/icpe25/) - 16th ACM/SPEC International Conference on Performance Engineering (ICPE'25) - Toronto
+- `en` [Panel: Performance modeling for the computing continuum](https://josecastillolema.github.io/hotcloudperf25/) - 8th Workshop on Hot Topics in Cloud Computing Performance (HotCloudPerf'25) - Toronto
+- `en` [Docker hands-on](https://josecastillolema.github.io/codethedream25/) - Code the Dream Skill-IT workshops
+- `es` [OCaml (vs Python) y Unikernels con MirageOS ](https://josecastillolema.github.io/fp-madrid-ocaml/) - Functional Programming Madrid - Madrid
 
 ###### 2024
 
-- `es` [Descubre el poder de la programación funcional a través de OCaml](https://josecastillolema.github.io/industriosa-ocaml/) - A Industriosa - Vigo
 - `en` [Docker hands-on](https://josecastillolema.github.io/codethedream/) - Code the Dream Skill-IT workshops
+- `es` [Descubre el poder de la programación funcional a través de OCaml](https://josecastillolema.github.io/industriosa-ocaml/) - A Industriosa - Vigo
 
 ###### 2023
 
@@ -46,12 +46,12 @@ Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.
 
 ###### 2020
 
-- `pt` [Working with ONF to transform mobile and broadband networks in LATAM](https://josecastillolema.github.io/onf-webinar/) - ONF webinar
 - `pt` [A computação em nuvem no Brasil](https://josecastillolema.github.io/totvs-talks/) - TOTVS talks #09
+- `pt` [Working with ONF to transform mobile and broadband networks in LATAM](https://josecastillolema.github.io/onf-webinar/) - ONF webinar
 
 ###### 2018
-- `pt` [IPv6 no OpenStack](https://josecastillolema.github.io/openstackday/) - OpenStack day SP '18 - São Paulo
 - `pt` [IPv6 no OpenStack](https://josecastillolema.github.io/mandic-webinar/) - Webinar Mandic - São Paulo
+- `pt` [IPv6 no OpenStack](https://josecastillolema.github.io/openstackday/) - OpenStack day SP '18 - São Paulo
 
 ###### 2017
 - `pt` [Tour IoT](https://josecastillolema.github.io/futurecom17/) - Futurecom '17 - São Paulo
