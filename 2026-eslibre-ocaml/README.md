@@ -19,7 +19,7 @@ style: |
   }
 ---
 ![bg left:40% 80%](img/ocaml.svg)
-# **Ocaml vs Python: ventajas de lenguajes (verdaderamente) funcionales**
+# **OCaml vs Python: ventajas de lenguajes (verdaderamente) funcionales**
 <br/>
 <br/>
 José Castillo Lema

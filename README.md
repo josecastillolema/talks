@@ -4,6 +4,7 @@ Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.
 
 ###### 2026
 
+- `es` [OCaml vs Python: ventajas de lenguajes (verdaderamente) funcionales](https://josecastillolema.github.io/kde-express/) - esLibre'26 - Melide
 - `en` [A Performance Comparison of Kubernetes Multi-Cluster Networking](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
 - `en` [API Remoting for llama.cpp: Near-Native GPU Speed in macOS Containers](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
 
