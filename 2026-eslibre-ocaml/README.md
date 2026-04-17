@@ -18,6 +18,7 @@ style: |
     flex: 1;
   }
 ---
+<!-- cSpell:language en,es -->
 ![bg left:40% 80%](img/ocaml.svg)
 # **OCaml vs Python: ventajas de lenguajes (verdaderamente) funcionales**
 <br/>
@@ -42,8 +43,8 @@ José Castillo Lema
 ---
 ## Índice
 - Conceptos de programación funcional (funciones de primera clase, funciones puras, inmutabilidad, recursión)
-- Fundamentos de OCaml (tipos de datos, sintax, operaciones básicas)
-- Biblioteca estandar de OCaml
+- Fundamentos de OCaml (tipos de datos, sintaxis, operaciones básicas)
+- Biblioteca estándar de OCaml
 - Técnicas de pruebas y depuración en programación funcional
 - Ejemplos del mundo real (analizadores, intérpretes, etc.)
 
@@ -287,7 +288,7 @@ En **Python**:
 <div class="col">
 
 Tenemos que representar la siguiente regla de negocio:
-> **Los clientes deben tener email o direccion**
+> **Los clientes deben tener email o dirección**
 
 En **OCaml**:
 ```ocaml

@@ -18,6 +18,7 @@ style: |
     flex: 1;
   }
 ---
+<!-- cSpell:language en,es -->
 
 <style>
 img[alt~="center"] {

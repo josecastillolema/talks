@@ -18,6 +18,7 @@ style: |
     flex: 1;
   }
 ---
+<!-- cSpell:language en,es -->
 ![bg left:40% 80%](img/ocaml.svg)
 # **Programación funcional a través de OCaml**
 <br/>
