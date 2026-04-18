@@ -144,7 +144,7 @@ table {
 
 En **OCaml**:
 ```ocaml
-(* sum : int list -> int *)
+(* suma : int list -> int *)
 let rec suma = function
   | [] -> 0
   | h::t -> h + sum t
