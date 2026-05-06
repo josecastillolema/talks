@@ -4,6 +4,7 @@ Talks at conferences, meetups, hackathons, etc., some using [Marp](https://marp.
 
 ###### 2026
 
+- `en` [Bridging Clusters: A comparative Look at Multicluster Networking Performance in Kubernetes](https://josecastillolema.github.io/icpe26/) - 17th ACM/SPEC International Conference on Performance Engineering (ICPE'26) - Florence
 - `es` [OCaml vs Python: ventajas de lenguajes (verdaderamente) funcionales](https://josecastillolema.github.io/eslibre26/) - esLibre'26 - Melide
 - `es` [Containerlab: crea tu propio laboratorio de redes](https://josecastillolema.github.io/eslibre26/) - esLibre'26 - Melide
 - `en` [A Performance Comparison of Kubernetes Multi-Cluster Networking](https://josecastillolema.github.io/fosdem26/) - FOSDEM'26 - Brussels
